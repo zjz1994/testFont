@@ -1,11 +1,11 @@
 function testFont(fontName) {
     var canvasInput = document.createElement("canvas");
-    canvasInput.width = 50;
+    canvasInput.width = 300;
     canvasInput.height = 50;
     var contextInput = canvasInput.getContext('2d');
     var textMetricsInput;
     //画文本
-    text = "重";
+    text = "重Ab8αлㄝなā¤√";
 
     function drawTextInput(text) {
         contextInput.font = '30px ' + fontName;
@@ -23,7 +23,7 @@ function testFont(fontName) {
     fontInput = canvasInput.toDataURL();
 
     var canvasCom = document.createElement("canvas");
-    canvasCom.width = 50;
+    canvasCom.width = 300;
     canvasCom.height = 50;
     var contextCom = canvasCom.getContext('2d');
     var textMetricsCom;
